@@ -1,0 +1,18 @@
+/* 切图狗网站 - 字体样式 */
+
+/* 导入科技感字体 */
+
+/* Orbitron - 英文主标题字体 */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+/* Rajdhani - 英文正文字体 */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+/* JetBrains Mono - 等宽代码字体 */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* ZCOOL QingKe HuangYou - 中文科技感字体 */
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+
+/* Noto Sans SC - 中文正文字体 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap'); 

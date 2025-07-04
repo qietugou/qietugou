@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>切图狗 - 未来科技前端平台</title>
+    <meta name="description" content="切图狗是一个面向未来科技的前端开发者和设计师的前沿平台，展示最尖端的UI/UX设计和前端技术，引领行业趋势。">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 预加载字体 -->
+    <link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/fonts.css"></noscript>
+    <!-- 预加载JS -->
+    <link rel="preload" href="js/three.min.js" as="script">
+    <link rel="preload" href="js/gsap.min.js" as="script">
+    <!-- 网站图标 -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body class="loading">
+    <!-- 加载屏幕 -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">切图狗</div>
+            <div class="loader-progress">
+                <div class="loader-bar"></div>
+            </div>
+            <div class="loader-text">正在构建量子通道...</div>
+        </div>
+    </div>
+
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 背景效果 -->
+        <div class="bg-container">
+            <canvas id="bg-canvas"></canvas>
+        </div>
+
+        <!-- 导航栏 -->
+        <nav class="main-nav">
+            <div class="nav-logo">
+                <a href="index.html" class="glitch-text">切图狗</a>
+            </div>
+            <div class="nav-toggle">
+                <div class="nav-icon"></div>
+            </div>
+            <div class="nav-links hologram">
+                <a href="index.html" class="active">首页</a>
+                <a href="lab.html">实验室</a>
+                <a href="workshop.html">神经工坊</a>
+                <a href="gallery.html">量子画廊</a>
+                <a href="timeline.html">时空胶囊</a>
+            </div>
+        </nav>
+
+        <!-- 主内容 -->
+        <main class="main-content">
+            <!-- 英雄区 -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title glitch-text">切图狗</h1>
+                    <p class="hero-subtitle">22世纪前端技术与设计的交汇点</p>
+                    <div class="hero-buttons">
+                        <a href="#explore" class="btn btn-primary">探索未来</a>
+                        <a href="#about" class="btn btn-outline">了解更多</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hologram-container" id="hero-hologram"></div>
+                </div>
+            </section>
+
+            <!-- 关于区域 -->
+            <section id="about" class="about-section">
+                <div class="section-header">
+                    <h2 class="section-title">关于切图狗</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>切图狗是一个面向未来科技的前端开发者和设计师的前沿平台，我们致力于展示最尖端的UI/UX设计和前端技术，引领行业趋势。</p>
+                        <p>在这里，您将体验到前所未有的视觉盛宴和交互体验，探索前端技术的无限可能。</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">前沿技术</h3>
+                            <p class="feature-desc">探索WebGL、Three.js、GSAP等最新前端技术</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">创新设计</h3>
+                            <p class="feature-desc">体验未来科技风格的UI/UX设计理念</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                    <line x1="6" y1="1" x2="6" y2="4"></line>
+                                    <line x1="10" y1="1" x2="10" y2="4"></line>
+                                    <line x1="14" y1="1" x2="14" y2="4"></line>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">资源共享</h3>
+                            <p class="feature-desc">获取高质量的设计资源和开发工具</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 探索区域 -->
+            <section id="explore" class="explore-section">
+                <div class="section-header">
+                    <h2 class="section-title">探索领域</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="explore-grid">
+                    <a href="lab.html" class="explore-card">
+                        <div class="card-visual">
+                            <div class="card-hologram"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">实验室</h3>
+                            <p class="card-desc">探索前沿技术实验和创新案例</p>
+                        </div>
+                    </a>
+                    <a href="workshop.html" class="explore-card">
+                        <div class="card-visual">
+                            <div class="card-hologram"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">神经工坊</h3>
+                            <p class="card-desc">AI辅助设计工具和资源</p>
+                        </div>
+                    </a>
+                    <a href="gallery.html" class="explore-card">
+                        <div class="card-visual">
+                            <div class="card-hologram"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">量子画廊</h3>
+                            <p class="card-desc">最前沿设计作品展示</p>
+                        </div>
+                    </a>
+                    <a href="timeline.html" class="explore-card">
+                        <div class="card-visual">
+                            <div class="card-hologram"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">时空胶囊</h3>
+                            <p class="card-desc">行业发展历史与未来预测</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 最新动态 -->
+            <section class="news-section">
+                <div class="section-header">
+                    <h2 class="section-title">量子波动</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="news-slider">
+                    <div class="news-item">
+                        <div class="news-date">2099.04.15</div>
+                        <h3 class="news-title">神经网络设计革命</h3>
+                        <p class="news-excerpt">AI设计助手现已能够理解抽象设计概念，并生成符合未来审美的界面...</p>
+                        <a href="#" class="news-link">了解更多</a>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">2099.03.28</div>
+                        <h3 class="news-title">全息投影交互标准发布</h3>
+                        <p class="news-excerpt">W3C正式发布全息投影Web交互标准，开发者现可使用标准API创建...</p>
+                        <a href="#" class="news-link">了解更多</a>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">2099.02.10</div>
+                        <h3 class="news-title">量子计算前端框架</h3>
+                        <p class="news-excerpt">首个基于量子计算的前端框架QuantumReact发布，渲染速度提升...</p>
+                        <a href="#" class="news-link">了解更多</a>
+                    </div>
+                </div>
+                <div class="news-controls">
+                    <button class="news-prev">上一个</button>
+                    <div class="news-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="news-next">下一个</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-text glitch-text">切图狗</div>
+                    <p class="tagline">22世纪前端技术与设计的交汇点</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-title">导航</h3>
+                        <a href="index.html">首页</a>
+                        <a href="lab.html">实验室</a>
+                        <a href="workshop.html">神经工坊</a>
+                        <a href="gallery.html">量子画廊</a>
+                        <a href="timeline.html">时空胶囊</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">资源</h3>
+                        <a href="#">设计资源</a>
+                        <a href="#">开发工具</a>
+                        <a href="#">学习指南</a>
+                        <a href="#">API文档</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">关于我们</h3>
+                        <a href="#">团队介绍</a>
+                        <a href="#">联系方式</a>
+                        <a href="#">加入我们</a>
+                        <a href="#">隐私政策</a>
+                    </div>
+                </div>
+                <div class="footer-subscribe">
+                    <h3 class="footer-title">订阅量子讯息</h3>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="输入您的邮箱">
+                        <button type="submit">订阅</button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">© 2099 切图狗. 保留所有权利.</div>
+                <div class="powered-by">由量子计算提供支持</div>
+            </div>
+        </footer>
+
+        <!-- 虚拟助手 -->
+        <div class="ai-assistant">
+            <div class="ai-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 16v-4"></path>
+                    <path d="M12 8h.01"></path>
+                </svg>
+            </div>
+            <div class="ai-container">
+                <div class="ai-header">
+                    <div class="ai-title">量子助手</div>
+                    <button class="ai-close">×</button>
+                </div>
+                <div class="ai-body">
+                    <div class="ai-messages">
+                        <div class="ai-message">
+                            <div class="ai-avatar"></div>
+                            <div class="ai-content">欢迎来到切图狗！我是您的量子助手，有什么可以帮助您的吗？</div>
+                        </div>
+                    </div>
+                    <div class="ai-input">
+                        <input type="text" placeholder="输入您的问题...">
+                        <button class="ai-send">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 脚本 -->
+    <script src="js/three.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
